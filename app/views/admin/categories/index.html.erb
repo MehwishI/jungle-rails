@@ -1,0 +1,18 @@
+
+<div class="well">
+<%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
+</div>
+
+<thead>
+<th>Category names </th>
+</thead>
+
+<tbody>
+<td>
+<% @categories.each do |category| %>
+     <li> <%= category.name %> </li>
+<% end %>
+</td>
+
+
+</tbody>
