@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
+  attr_accessor :name, :price, :category, :quantity
   monetize :price_cents, numericality: true
   mount_uploader :image, ProductImageUploader
 
